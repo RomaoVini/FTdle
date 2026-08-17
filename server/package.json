@@ -9,8 +9,8 @@
     "build": "tsup src/server.ts",
     "test": "vitest run src",
     "test:watch": "vitest src",
-    "test:e2e": "dotenv -e .env.test -- vitest run --config ./test/vitest.config.ts",
-    "test:e2e:watch": "dotenv -e .env.test -- vitest --config ./test/vitest.config.ts"
+    "test:e2e": "dotenv -e .env.test -- vitest run --config ./tests/vitest.config.ts",
+    "test:e2e:watch": "dotenv -e .env.test -- vitest --config ./tests/vitest.config.ts"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +28,7 @@
     "@types/express": "^5.0.6",
     "@types/node": "^26.2.0",
     "@types/supertest": "^7.2.1",
+    "dotenv-cli": "11.0.0",
     "prisma": "^7.9.1",
     "supertest": "^7.2.2",
     "tsup": "^8.5.1",
